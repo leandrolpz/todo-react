@@ -1,11 +1,11 @@
 import React from "react";
 
 const Todo = ({ todo, removeTodo, completeTodo }) => {
-  return (
+    return (
         <div className="todo" 
         style={{ backgroundColor: todo.isCompleted ? "#80ed99" : ""} }>
         <div className="content">
-          <textarea style={{ width: 420, height: 120 }} readOnly>{todo.text}</textarea>
+          <textarea>{todo.text}</textarea>
           <p className='category'>
             ({todo.category})
           </p>
@@ -16,7 +16,7 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
             <button className="remove" onClick={() => removeTodo(todo.id)} >X</button>
           </div>
         </div>
-      </div >
+      </div>
     )
 }
 
