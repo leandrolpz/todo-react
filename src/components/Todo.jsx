@@ -5,7 +5,7 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
         <div className="todo" 
         style={{ backgroundColor: todo.isCompleted ? "#80ed99" : ""} }>
         <div className="content">
-          <textarea>{todo.text}</textarea>
+          <textarea readOnly>{todo.text}</textarea>
           <p className='category'>
             ({todo.category})
           </p>
